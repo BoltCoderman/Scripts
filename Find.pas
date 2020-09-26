@@ -2,7 +2,7 @@ function FoundItems(): Array of Cardinal;
 var Items: TStringList; i: Integer;
 begin
   Items := TStringList.Create;
-	GetFindedList(Items);
+  GetFindedList(Items);
   SetLength(Result, Items.Count);
   for i := 0 to Items.Count-1 do Result[i] := StrToInt('$' + Items.Strings[i]);
   Items.Free;
