@@ -18,7 +18,7 @@ begin
   if Length(Items) > 0 then Result := Items[Length(Items)-1] else Result := 0;
 end;
 
-function IsContained(Item: Cardinal; Items: Array of Cardinal): Boolean;
+function ItemExists(Item: Cardinal; Items: Array of Cardinal): Boolean;
 var i: Integer;
 begin
   Result := False;
